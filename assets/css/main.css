@@ -1,9 +1,9 @@
 :root {
 	--accent: orange;
-	--text: #333;
-	--regular-text: 16px;
-	--lineheight: 1.65;
-	--userfont: roboto-st, sans-serif;
+	--text: #000;
+	--regular-text: 18px;
+	--lineheight: 1.15;
+	--userfont: Times, sans-serif, roboto-st;
 	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
@@ -12,10 +12,10 @@
 
 /* FONTS LOAD SECTION */
 
-@font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: normal; }
-@font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 400; font-style: italic; }
-@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: normal; }
-@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st"; font-weight: 700; font-style: italic; }
+@font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "roboto--0"; font-weight: 400; font-style: normal; }
+@font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st-1"; font-weight: 400; font-style: italic; }
+@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st-2"; font-weight: 700; font-style: normal; }
+@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st-3"; font-weight: 700; font-style: italic; }
 
 /* GENERAL CSS SETTINGS */
 
@@ -30,12 +30,18 @@ body {
 	font-size: var(--regular-text);
 	line-height: var(--lineheight);
 	color: var(--text);
+	margin: 0;
 	min-width: 320px;
 	position: relative;
-	overflow-x: hidden;
+	overflow-x: scroll;
 }
 
 /* USER STYLES */
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
 
 .image {
 	max-width: 100%;
