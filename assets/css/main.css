@@ -1,49 +1,98 @@
 :root {
-	--accent: orange;
-	--text: #000;
-	--regular-text: 18px;
-	--lineheight: 1.15;
-	--userfont: Times, sans-serif, roboto-st;
-	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --accent: orange;
+  --text: #000;
+  --regular-text: 18px;
+  --lineheight: 1.15;
+  --userfont: Times, sans-serif, roboto-st;
+  --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
 }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
-.row, .row > * { --bs-gutter-x: 1.25rem; }
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 0.625rem;
+}
+.row,
+.row > * {
+  --bs-gutter-x: 1.25rem;
+}
 
-@font-face { src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"); font-family: "roboto--0"; font-weight: 400; font-style: normal; }
-@font-face { src: url("../fonts/roboto-italic-webfont.woff2") format("woff2"); font-family: "roboto-st-1"; font-weight: 400; font-style: italic; }
-@font-face { src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"); font-family: "roboto-st-2"; font-weight: 700; font-style: normal; }
-@font-face { src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2"); font-family: "roboto-st-3"; font-weight: 700; font-style: italic; }
+@font-face {
+  src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+  font-family: "roboto--0";
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2");
+  font-family: "roboto-st-1";
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+  font-family: "roboto-st-2";
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2");
+  font-family: "roboto-st-3";
+  font-weight: 700;
+  font-style: italic;
+}
 
-::placeholder { color: #555; }
-::selection { background-color: var(--accent); color: #fff; }
-input, textarea { outline: none; }
-input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
-input:required:valid, textarea:required:valid { border-color: green; }
+::placeholder {
+  color: #555;
+}
+::selection {
+  background-color: var(--accent);
+  color: #fff;
+}
+input,
+textarea {
+  outline: none;
+}
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+  border-color: red;
+}
+input:required:valid,
+textarea:required:valid {
+  border-color: green;
+}
 
 body {
-	font-family: var(--userfont);
-	font-size: var(--regular-text);
-	line-height: var(--lineheight);
-	color: var(--text);
-	margin: 0;
-	min-width: 320px;
-	position: relative;
-	overflow-x: scroll;
+  font-family: var(--userfont);
+  font-size: var(--regular-text);
+  line-height: var(--lineheight);
+  color: var(--text);
+  margin: 0;
+  min-width: 320px;
+  position: relative;
+  overflow-x: scroll;
 }
 
 h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
 .image {
-	max-width: 100%;
-	margin-bottom: var(--bs-gutter-x);
-	border-radius: 4px;
+  max-width: 100%;
+  margin-bottom: var(--bs-gutter-x);
+  border-radius: 4px;
 }
 
 .accent {
-	color: var(--accent);
-	font-weight: bold;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.logo {
+  background: #559ca1;
 }
